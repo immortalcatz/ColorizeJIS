@@ -2,7 +2,7 @@
 
 自由な配色で、自由な建築を！
 
-![ColorizeJIS](resources/images/logo.jpg)  
+![ColorizeJIS](resources/images/logo.gif)  
 ![Color Blocks Plus](resources/images/screenshot.png)
 
 ※このModはあくまで個人の製作物であり、JIS(日本工業規格)によるものではありません。
