@@ -1,0 +1,1099 @@
+mod:
+    name:            &modName ColorizeJIS
+    class:                    ColorizeJis
+    id:                       colorizejis
+    icon:                     Beniiro
+    version:      &modVersion 1.0
+    mcversion:                1.7.10
+    description:
+    url:                      https://github.com/Isthmis/ColorizeJIS
+    updateUrl:
+    authorList:               [Mutous]
+    credits:
+    logoFile:
+    screenshots:              []
+    parent:
+    requiredMods:             []
+    dependencies:             [Forge]
+    dependants:               []
+    useDependencyInformation: true
+    packageDir:               resources/package/    # Output .jar Directory
+    packageName:              [*modName, ' - ', *modVersion]    # Package File Name: ___modPackageName___.jar
+block:
+    material:   Material.rock
+    resistance: 50F
+    hardness:   0.1F
+    stepSound:  Block.soundTypeStone
+    info:       [*modName, ' -']    # addInfomation() return "___blockInfo___ ___colorCode___"
+templates:
+    baseDir:   templates
+    exportDir: src
+colors:
+    -
+        code: '#F9A1D0'
+        id:   Tokiiro
+        name: 鴇色 - Toki-iro
+    -
+        code: '#CB4B94'
+        id:   Tsutsujiiro
+        name: 躑躅色 - Tsutsuji-iro
+    -
+        code: '#FFDBED'
+        id:   Sakurairo
+        name: 桜色 - Sakura-iro
+    -
+        code: '#D34778'
+        id:   Barairo
+        name: 薔薇色 - Bara-iro
+    -
+        code: '#E3557F'
+        id:   Karakurenai
+        name: 唐紅 - Karakurenai
+    -
+        code: '#FF87A0'
+        id:   Sangoiro
+        name: 珊瑚色 - Sango-iro
+    -
+        code: '#E08899'
+        id:   Kobaiiro
+        name: 紅梅色 - Kōbai-iro
+    -
+        code: '#E38698'
+        id:   Momoiro
+        name: 桃色 - Momo-iro
+    -
+        code: '#BD1E48'
+        id:   Beniiro
+        name: 紅色 - Beni-iro
+    -
+        code: '#B92946'
+        id:   Beniaka
+        name: 紅赤 - Beniaka
+    -
+        code: '#AE3846'
+        id:   Enji
+        name: 燕脂 - Enji
+    -
+        code: '#974B52'
+        id:   Suo
+        name: 蘇芳 - Suō
+    -
+        code: '#A0283A'
+        id:   Akaneiro
+        name: 茜色 - Akane-iro
+    -
+        code: '#BF1E33'
+        id:   Aka
+        name: 赤 - Aka
+    -
+        code: '#ED514E'
+        id:   Shuiro
+        name: 朱色 - Shu-iro
+    -
+        code: '#A14641'
+        id:   Benikabairo
+        name: 紅樺色 - Benikaba-iro
+    -
+        code: '#EE5145'
+        id:   Benihi
+        name: 紅緋 - Benihi
+    -
+        code: '#D3503C'
+        id:   Entaniro
+        name: 鉛丹色 - Entan-iro
+    -
+        code: '#703B32'
+        id:   Beniebicha
+        name: 紅海老茶 - Beniebicha
+    -
+        code: '#7D483E'
+        id:   Tobiiro
+        name: 鳶色 - Tobi-iro
+    -
+        code: '#946259'
+        id:   Azukiiro
+        name: 小豆色 - Azuki-iro
+    -
+        code: '#8A4031'
+        id:   Bengarairo
+        name: 弁柄色 - Bengara-iro
+    -
+        code: '#6D3D33'
+        id:   Ebicha
+        name: 海老茶 - Ebicha
+    -
+        code: '#ED542A'
+        id:   Kinaka
+        name: 金赤 - Kin'aka
+    -
+        code: '#B15237'
+        id:   Akacha
+        name: 赤茶 - Akacha
+    -
+        code: '#923A21'
+        id:   Akasabiiro
+        name: 赤錆色 - Akasabi-iro
+    -
+        code: '#EF6D3E'
+        id:   Oni
+        name: 黄丹 - Ōni
+    -
+        code: '#ED551B'
+        id:   Akadaidai
+        name: 赤橙 - Akadaidai
+    -
+        code: '#E06030'
+        id:   Kakiiro
+        name: 柿色 - Kaki-iro
+    -
+        code: '#B97761'
+        id:   Nikkeiiro
+        name: 肉桂色 - Nikkei-iro
+    -
+        code: '#BD4A1D'
+        id:   Kabairo
+        name: 樺色 - Kaba-iro
+    -
+        code: '#974E33'
+        id:   Rengairo
+        name: 煉瓦色 - Renga-iro
+    -
+        code: '#664134'
+        id:   Sabiiro
+        name: 錆色 - Sabi-iro
+    -
+        code: '#8A604F'
+        id:   Hiwadairo
+        name: 檜皮色 - Hiwada-iro
+    -
+        code: '#754C38'
+        id:   Kuriiro
+        name: 栗色 - Kuri-iro
+    -
+        code: '#E45E00'
+        id:   Kiaka
+        name: 黄赤 - Kiaka
+    -
+        code: '#BA6432'
+        id:   Taisha
+        name: 代赭 - Taisha
+    -
+        code: '#B67A52'
+        id:   Rakudairo
+        name: 駱駝色 - Rakuda-iro
+    -
+        code: '#BB6421'
+        id:   Kicha
+        name: 黄茶 - Kicha
+    -
+        code: '#F4BE9B'
+        id:   Hadairo
+        name: 肌色 - Hada-iro
+    -
+        code: '#FD7E00'
+        id:   Daidaiiro
+        name: 橙色 - Daidai-iro
+    -
+        code: '#866955'
+        id:   Haicha
+        name: 灰茶 - Haicha
+    -
+        code: '#734E30'
+        id:   Chairo
+        name: 茶色 - Cha-iro
+    -
+        code: '#594639'
+        id:   Kogecha
+        name: 焦茶 - Kogecha
+    -
+        code: '#FFA75E'
+        id:   Kojiiro
+        name: 柑子色 - Kōji-iro
+    -
+        code: '#DDA273'
+        id:   Anzuiro
+        name: 杏色 - Anzu-iro
+    -
+        code: '#FA8000'
+        id:   Mikaniro
+        name: 蜜柑色 - Mikan-iro
+    -
+        code: '#763900'
+        id:   Kasshoku
+        name: 褐色 - Kasshoku
+    -
+        code: '#A96E2D'
+        id:   Tsuchiiro
+        name: 土色 - Tsuchi-iro
+    -
+        code: '#D9A46D'
+        id:   Komugiiro
+        name: 小麦色 - Komugi-iro
+    -
+        code: '#C67400'
+        id:   Kohakuiro
+        name: 琥珀色 - Kohaku-iro
+    -
+        code: '#C47600'
+        id:   Kincha
+        name: 金茶 - Kincha
+    -
+        code: '#FABE6F'
+        id:   Tamagoiro
+        name: 卵色 - Tamago-iro
+    -
+        code: '#FFA500'
+        id:   Yamabukiiro
+        name: 山吹色 - Yamabuki-iro
+    -
+        code: '#C18A39'
+        id:   Odoiro
+        name: 黄土色 - Ōdo-iro
+    -
+        code: '#897868'
+        id:   Kuchibairo
+        name: 朽葉色 - Kuchiba-iro
+    -
+        code: '#FFB500'
+        id:   Himawariiro
+        name: 向日葵色 - Himawari-iro
+    -
+        code: '#FCAC00'
+        id:   Ukoniro
+        name: 鬱金色 - Ukon-iro
+    -
+        code: '#C9B9A8'
+        id:   Sunairo
+        name: 砂色 - Suna-iro
+    -
+        code: '#CDA966'
+        id:   Karashiiro
+        name: 芥子色 - Karashi-iro
+    -
+        code: '#FFBE00'
+        id:   Kiiro
+        name: 黄色 - Ki-iro
+    -
+        code: '#FFBE00'
+        id:   Tampopoiro
+        name: 蒲公英色 - Tampopo-iro
+    -
+        code: '#70613A'
+        id:   Uguisucha
+        name: 鶯茶 - Uguisucha
+    -
+        code: '#FAD43A'
+        id:   Chuki
+        name: 中黄 - Chūki
+    -
+        code: '#EED67E'
+        id:   Kariyasuiro
+        name: 刈安色 - Kariyasu-iro
+    -
+        code: '#D9CB65'
+        id:   Kihadairo
+        name: 黄蘗色 - Kihada-iro
+    -
+        code: '#736F55'
+        id:   Miruiro
+        name: 海松色 - Miru-iro
+    -
+        code: '#C2C05C'
+        id:   Hiwairo
+        name: 鶸色 - Hiwa-iro
+    -
+        code: '#71714A'
+        id:   Uguisuiro
+        name: 鶯色 - Uguisu-iro
+    -
+        code: '#BDBF92'
+        id:   Macchairo
+        name: 抹茶色 - Maccha-iro
+    -
+        code: '#B9C42F'
+        id:   Kimidori
+        name: 黄緑 - Kimidori
+    -
+        code: '#7A7F46'
+        id:   Kokeiro
+        name: 苔色 - Koke-iro
+    -
+        code: '#A9B735'
+        id:   Wakakusairo
+        name: 若草色 - Wakakusa-iro
+    -
+        code: '#96AA3D'
+        id:   Moegi
+        name: 萌黄 - Moegi
+    -
+        code: '#72814B'
+        id:   Kusairo
+        name: 草色 - Kusa-iro
+    -
+        code: '#AFC297'
+        id:   Wakabairo
+        name: 若葉色 - Wakaba-iro
+    -
+        code: '#6E815C'
+        id:   Matsubairo
+        name: 松葉色 - Matsuba-iro
+    -
+        code: '#CADBCF'
+        id:   Byakuroku
+        name: 白緑 - Byakuroku
+    -
+        code: '#4DB56A'
+        id:   Midori
+        name: 緑 - Midori
+    -
+        code: '#357C4C'
+        id:   Tokiwairo
+        name: 常磐色 - Tokiwa-iro
+    -
+        code: '#5F836D'
+        id:   Rokushoiro
+        name: 緑青色 - Rokushō-iro
+    -
+        code: '#4A6956'
+        id:   Chitosemidori
+        name: 千歳緑 - Chitosemidori
+    -
+        code: '#005731'
+        id:   Fukamidori
+        name: 深緑 - Fukamidori
+    -
+        code: '#15543B'
+        id:   Moegiiro
+        name: 萌葱色 - Moegi-iro
+    -
+        code: '#49A581'
+        id:   Wakatakeiro
+        name: 若竹色 - Wakatake-iro
+    -
+        code: '#80AA9F'
+        id:   Seijiiro
+        name: 青磁色 - Seiji-iro
+    -
+        code: '#7AAAAC'
+        id:   Aotakeiro
+        name: 青竹色 - Aotake-iro
+    -
+        code: '#244344'
+        id:   Tetsuiro
+        name: 鉄色 - Tetsu-iro
+    -
+        code: '#0090A8'
+        id:   Aomidori
+        name: 青緑 - Aomidori
+    -
+        code: '#6C8D9B'
+        id:   Sabiasagi
+        name: 錆浅葱 - Sabiasagi
+    -
+        code: '#7A99AA'
+        id:   Mizuasagi
+        name: 水浅葱 - Mizuasagi
+    -
+        code: '#69AAC6'
+        id:   Shimbashiiro
+        name: 新橋色 - Shimbashi-iro
+    -
+        code: '#0087AA'
+        id:   Asagiiro
+        name: 浅葱色 - Asagi-iro
+    -
+        code: '#84B5CF'
+        id:   Byakugun
+        name: 白群 - Byakugun
+    -
+        code: '#166A88'
+        id:   Nandoiro
+        name: 納戸色 - Nando-iro
+    -
+        code: '#8CB4CE'
+        id:   Kamenozoki
+        name: 甕覗 - Kamenozoki
+    -
+        code: '#A9CEEC'
+        id:   Mizuiro
+        name: 水色 - Mizu-iro
+    -
+        code: '#5E7184'
+        id:   Ainezu
+        name: 藍鼠 - Ainezu
+    -
+        code: '#95C0EC'
+        id:   Sorairo
+        name: 空色 - Sora-iro
+    -
+        code: '#0067C0'
+        id:   Ao
+        name: 青 - Ao
+    -
+        code: '#2E4B71'
+        id:   Aiiro
+        name: 藍色 - Ai-iro
+    -
+        code: '#20324E'
+        id:   Koiai
+        name: 濃藍 - Koiai
+    -
+        code: '#92AFE4'
+        id:   Wasurenagusairo
+        name: 勿忘草色 - Wasurenagusa-iro
+    -
+        code: '#3D7CCE'
+        id:   Tsuyukusairo
+        name: 露草色 - Tsuyukusa-iro
+    -
+        code: '#3C639B'
+        id:   Hanadairo
+        name: 縹色 - Hanada-iro
+    -
+        code: '#3D496B'
+        id:   Konjo
+        name: 紺青 - Konjō
+    -
+        code: '#3451A4'
+        id:   Ruriiro
+        name: 瑠璃色 - Ruri-iro
+    -
+        code: '#324784'
+        id:   Rurikon
+        name: 瑠璃紺 - Rurikon
+    -
+        code: '#333C5E'
+        id:   Koniro
+        name: 紺色 - Kon-iro
+    -
+        code: '#4C5DAB'
+        id:   Kakitsubata
+        name: 燕子花 - Kakitsubata
+    -
+        code: '#383C57'
+        id:   Kachiiro
+        name: 勝色 - Kachi-iro
+    -
+        code: '#414FA3'
+        id:   Gunjoiro
+        name: 群青色 - Gunjō-iro
+    -
+        code: '#232538'
+        id:   Tetsukon
+        name: 鉄紺 - Tetsukon
+    -
+        code: '#6869A8'
+        id:   Hujinando
+        name: 藤納戸 - Hujinando
+    -
+        code: '#4A49AD'
+        id:   Kikyoiro
+        name: 桔梗色 - Kikyō-iro
+    -
+        code: '#35357D'
+        id:   Konai
+        name: 紺藍 - Kon'ai
+    -
+        code: '#A09BD8'
+        id:   Fujiiro
+        name: 藤色 - Fuji-iro
+    -
+        code: '#948BDB'
+        id:   Fujimurasaki
+        name: 藤紫 - Fujimurasaki
+    -
+        code: '#704CBC'
+        id:   Aomurasaki
+        name: 青紫 - Aomurasaki
+    -
+        code: '#6D52AB'
+        id:   Sumireiro
+        name: 菫色 - Sumire-iro
+    -
+        code: '#675D7E'
+        id:   Hatobairo
+        name: 鳩羽色 - Hatoba-iro
+    -
+        code: '#7051AA'
+        id:   Shobuiro
+        name: 菖蒲色 - Shōbu-iro
+    -
+        code: '#5F4C86'
+        id:   Edomurasaki
+        name: 江戸紫 - Edomurasaki
+    -
+        code: '#A260BF'
+        id:   Murasaki
+        name: 紫 - Murasaki
+    -
+        code: '#775686'
+        id:   Kodaimurasaki
+        name: 古代紫 - Kodaimurasaki
+    -
+        code: '#47384F'
+        id:   Nasukon
+        name: 茄子紺 - Nasukon
+    -
+        code: '#402949'
+        id:   Shikon
+        name: 紫紺 - Shikon
+    -
+        code: '#C27BC8'
+        id:   Ayameiro
+        name: 菖蒲色 - Ayame-iro
+    -
+        code: '#C24DAE'
+        id:   Botaniro
+        name: 牡丹色 - Botan-iro
+    -
+        code: '#C54EA0'
+        id:   Akamurasaki
+        name: 赤紫 - Akamurasaki
+    -
+        code: '#F1F1F1'
+        id:   Shiro
+        name: 白 - Shiro
+    -
+        code: '#F2E8EC'
+        id:   Gofuniro
+        name: 胡粉色 - Gofun-iro
+    -
+        code: '#F0E2E0'
+        id:   Kinariiro
+        name: 生成り色 - Kinari-iro
+    -
+        code: '#E3D4CA'
+        id:   Zogeiro
+        name: 象牙色 - Zōge-iro
+    -
+        code: '#A0A0A0'
+        id:   Ginnezu
+        name: 銀鼠 - Ginnezu
+    -
+        code: '#9F9190'
+        id:   Chanezumi
+        name: 茶鼠 - Chanezumi
+    -
+        code: '#868686'
+        id:   Nezumiiro
+        name: 鼠色 - Nezumi-iro
+    -
+        code: '#787C7A'
+        id:   Rikyunezu
+        name: 利休鼠 - Rikyūnezu
+    -
+        code: '#797A88'
+        id:   Namariiro
+        name: 鉛色 - Namari-iro
+    -
+        code: '#797979'
+        id:   Haiiro
+        name: 灰色 - Hai-iro
+    -
+        code: '#605448'
+        id:   Susutakeiro
+        name: 煤竹色 - Susutake-iro
+    -
+        code: '#3E2E28'
+        id:   Kurocha
+        name: 黒茶 - Kurocha
+    -
+        code: '#313131'
+        id:   Sumi
+        name: 墨 - Sumi
+    -
+        code: '#262626'
+        id:   Tetsuguro
+        name: 鉄黒 - Tetsuguro
+    -
+        code: '#262626'
+        id:   Kuro
+        name: 黒 - Kuro
+    -
+        code: '#C74F90'
+        id:   RoseRed
+        name: ローズレッド - Rose Red
+    -
+        code: '#EF93B6'
+        id:   RosePink
+        name: ローズピンク - Rose Pink
+    -
+        code: '#AF3168'
+        id:   CochinealRed
+        name: コチニールレッド - Cochineal Red
+    -
+        code: '#B91E68'
+        id:   RubyRed
+        name: ルビーレッド - Ruby Red
+    -
+        code: '#83274E'
+        id:   WineRed
+        name: ワインレッド - Wine Red
+    -
+        code: '#452A35'
+        id:   Burgundy
+        name: バーガンディー - Burgundy
+    -
+        code: '#C97F96'
+        id:   OldRose
+        name: オールドローズ - Old Rose
+    -
+        code: '#D94177'
+        id:   Rose
+        name: ローズ - Rose
+    -
+        code: '#BB1E5E'
+        id:   Strawberry
+        name: ストロベリー - Strawberry
+    -
+        code: '#FF87A0'
+        id:   CoralRed
+        name: コーラルレッド - Coral Red
+    -
+        code: '#EB97A8'
+        id:   Pink
+        name: ピンク - Pink
+    -
+        code: '#55353B'
+        id:   Bordeaux
+        name: ボルドー - Bordeaux
+    -
+        code: '#FFC9D2'
+        id:   BabyPink
+        name: ベビーピンク - Baby Pink
+    -
+        code: '#DD4157'
+        id:   PoppyRed
+        name: ポピーレッド - Poppy Red
+    -
+        code: '#CE314A'
+        id:   SignalRed
+        name: シグナルレッド - Signal Red
+    -
+        code: '#BE1E3E'
+        id:   Carmine
+        name: カーマイン - Carmine
+    -
+        code: '#DE424C'
+        id:   Red
+        name: レッド - Red
+    -
+        code: '#DE424C'
+        id:   TomatoRed
+        name: トマトレッド - Tomato Red
+    -
+        code: '#682A2B'
+        id:   Maroon
+        name: マルーン - Maroon
+    -
+        code: '#ED514E'
+        id:   Vermilion
+        name: バーミリオン - Vermilion
+    -
+        code: '#DE4335'
+        id:   Scarlet
+        name: スカーレット - Scarlet
+    -
+        code: '#AC5647'
+        id:   Terracotta
+        name: テラコッタ - Terracotta
+    -
+        code: '#FFA594'
+        id:   SalmonPink
+        name: サーモンピンク - Salmon Pink
+    -
+        code: '#FBCCC3'
+        id:   ShellPink
+        name: シェルピンク - Shell Pink
+    -
+        code: '#F1BEB1'
+        id:   NailPink
+        name: ネールピンク - Nail Pink
+    -
+        code: '#FF5D20'
+        id:   ChineseRed
+        name: チャイニーズレッド - Chinese Red
+    -
+        code: '#CC572C'
+        id:   CarrotOrange
+        name: キャロットオレンジ - Carrot Orange
+    -
+        code: '#A8593C'
+        id:   BurntSienna
+        name: バーントシェンナ - Burnt Sienna
+    -
+        code: '#52372F'
+        id:   Chocolate
+        name: チョコレート - Chocolate
+    -
+        code: '#754C38'
+        id:   CocoaBrown
+        name: ココアブラウン - Cocoa Brown
+    -
+        code: '#EBC0AF'
+        id:   Peach
+        name: ピーチ - Peach
+    -
+        code: '#BB6421'
+        id:   RawSienna
+        name: ローシェンナ - Raw Sienna
+    -
+        code: '#FD7E00'
+        id:   Orange
+        name: オレンジ - Orange
+    -
+        code: '#734E31'
+        id:   Brown
+        name: ブラウン - Brown
+    -
+        code: '#DDA273'
+        id:   Apricot
+        name: アプリコット - Apricot
+    -
+        code: '#A56F3F'
+        id:   Tan
+        name: タン - Tan
+    -
+        code: '#FD951E'
+        id:   MandarinOrange
+        name: マンダリンオレンジ - Mandarin Orange
+    -
+        code: '#A58161'
+        id:   Cork
+        name: コルク - Cork
+    -
+        code: '#F8CFAE'
+        id:   EcruBeige
+        name: エクルベイジュ - Ecru Beige
+    -
+        code: '#F39A38'
+        id:   GoldenYellow
+        name: ゴールデンイエロー - Golden Yellow
+    -
+        code: '#FFA000'
+        id:   Marigold
+        name: マリーゴールド - Marigold
+    -
+        code: '#C5996D'
+        id:   Buff
+        name: バフ - Buff
+    -
+        code: '#B37D40'
+        id:   Umber
+        name: アンバー - Umber
+    -
+        code: '#815A2B'
+        id:   Bronze
+        name: ブロンズ - Bronze
+    -
+        code: '#C1AB96'
+        id:   Beige
+        name: ベージュ - Beige
+    -
+        code: '#C18A39'
+        id:   YellowOcher
+        name: イエローオーカー - Yellow Ocher
+    -
+        code: '#5B462A'
+        id:   BurntUmber
+        name: バーントアンバー - Burnt Umber
+    -
+        code: '#4A3B2A'
+        id:   Sepia
+        name: セピア - Sepia
+    -
+        code: '#9A753A'
+        id:   Khaki
+        name: カーキー - Khaki
+    -
+        code: '#E3B466'
+        id:   Blond
+        name: ブロンド - Blond
+    -
+        code: '#F2C26B'
+        id:   NaplesYellow
+        name: ネープルスイエロー - Naples Yellow
+    -
+        code: '#E1C59B'
+        id:   Leghorn
+        name: レグホーン - Leghorn
+    -
+        code: '#7F5C13'
+        id:   RawUmber
+        name: ローアンバー - Raw Umber
+    -
+        code: '#FFBC00'
+        id:   ChromeYellow
+        name: クロムイエロー - Chrome Yellow
+    -
+        code: '#FFCC00'
+        id:   Yellow
+        name: イエロー - Yellow
+    -
+        code: '#E8D5AF'
+        id:   CreamYellow
+        name: クリームイエロー - Cream Yellow
+    -
+        code: '#FFCC00'
+        id:   JauneBrillant
+        name: ジョンブリアン - Jaune Brillant
+    -
+        code: '#F7D54E'
+        id:   CanaryYellow
+        name: カナリーイエロー - Canary Yellow
+    -
+        code: '#68624E'
+        id:   OliveDrab
+        name: オリーブドラブ - Olive Drab
+    -
+        code: '#605627'
+        id:   Olive
+        name: オリーブ - Olive
+    -
+        code: '#E8C800'
+        id:   LemonYellow
+        name: レモンイエロー - Lemon Yellow
+    -
+        code: '#565838'
+        id:   OliveGreen
+        name: オリーブグリーン - Olive Green
+    -
+        code: '#BDD458'
+        id:   ChartreuseGreen
+        name: シャトルーズグリーン - Chartreuse Green
+    -
+        code: '#879D4E'
+        id:   LeafGreen
+        name: リーフグリーン - Leaf Green
+    -
+        code: '#737C3E'
+        id:   GrassGreen
+        name: グラスグリーン - Grass Green
+    -
+        code: '#9AB961'
+        id:   SeaGreen
+        name: シーグリーン - Sea Green
+    -
+        code: '#516A39'
+        id:   IvyGreen
+        name: アイビーグリーン - Ivy Green
+    -
+        code: '#B0D3A8'
+        id:   AppleGreen
+        name: アップルグリーン - Apple Green
+    -
+        code: '#81CC91'
+        id:   MintGreen
+        name: ミントグリーン - Mint Green
+    -
+        code: '#2A9B50'
+        id:   Green
+        name: グリーン - Green
+    -
+        code: '#5DC288'
+        id:   CobaltGreen
+        name: コバルトグリーン - Cobalt Green
+    -
+        code: '#4DA573'
+        id:   EmeraldGreen
+        name: エメラルドグリーン - Emerald Green
+    -
+        code: '#008047'
+        id:   MalachiteGreen
+        name: マラカイトグリーン - Malachite Green
+    -
+        code: '#264435'
+        id:   BottleGreen
+        name: ボトルグリーン - Bottle Green
+    -
+        code: '#3E795C'
+        id:   ForestGreen
+        name: フォレストグリーン - Forest Green
+    -
+        code: '#156F5C'
+        id:   Viridian
+        name: ビリジアン - Viridian
+    -
+        code: '#004840'
+        id:   BilliardGreen
+        name: ビリヤードグリーン - Billiard Green
+    -
+        code: '#007F91'
+        id:   PeacockGreen
+        name: ピーコックグリーン - Peacock Green
+    -
+        code: '#5190A4'
+        id:   NileBlue
+        name: ナイルブルー - Nile Blue
+    -
+        code: '#00708B'
+        id:   PeacockBlue
+        name: ピーコックブルー - Peacock Blue
+    -
+        code: '#399ECC'
+        id:   TurquoiseBlue
+        name: ターコイズブルー - Turquoise Blue
+    -
+        code: '#005175'
+        id:   MarineBlue
+        name: マリンブルー - Marine Blue
+    -
+        code: '#91B2D2'
+        id:   HorizonBlue
+        name: ホリゾンブルー - Horizon Blue
+    -
+        code: '#219DDD'
+        id:   Cyan
+        name: シアン - Cyan
+    -
+        code: '#95C0EC'
+        id:   SkyBlue
+        name: スカイブルー - Sky Blue
+    -
+        code: '#0B74AF'
+        id:   CeruleanBlue
+        name: セルリアンブルー - Cerulean Blue
+    -
+        code: '#ABBDDA'
+        id:   BabyBlue
+        name: ベビーブルー - Baby Blue
+    -
+        code: '#627DA1'
+        id:   SaxBlue
+        name: サックスブルー - Sax Blue
+    -
+        code: '#3170B9'
+        id:   Blue
+        name: ブルー - Blue
+    -
+        code: '#2863AB'
+        id:   CobaltBlue
+        name: コバルトブルー - Cobalt Blue
+    -
+        code: '#3D496B'
+        id:   IronBlue
+        name: アイアンブルー - Iron Blue
+    -
+        code: '#3D496B'
+        id:   PrussianBlue
+        name: プルシャンブルー - Prussian Blue
+    -
+        code: '#00152D'
+        id:   MidnightBlue
+        name: ミッドナイトブルー - Midnight Blue
+    -
+        code: '#7586BB'
+        id:   Hyacinth
+        name: ヒヤシンス - Hyacinth
+    -
+        code: '#333C5E'
+        id:   NavyBlue
+        name: ネービーブルー - Navy Blue
+    -
+        code: '#414FA3'
+        id:   UltramarineBlue
+        name: ウルトラマリンブルー - Ultramarine Blue
+    -
+        code: '#37438F'
+        id:   OrientalBlue
+        name: オリエンタルブルー - Oriental Blue
+    -
+        code: '#776ED2'
+        id:   Wistaria
+        name: ウィスタリア - Wistaria
+    -
+        code: '#40317E'
+        id:   Pansy
+        name: パンジー - Pansy
+    -
+        code: '#836DC5'
+        id:   Heliotrope
+        name: ヘリオトロープ - Heliotrope
+    -
+        code: '#6D52AB'
+        id:   Violet
+        name: バイオレット - Violet
+    -
+        code: '#9E8EAE'
+        id:   Lavender
+        name: ラベンダー - Lavender
+    -
+        code: '#835FA8'
+        id:   Mauve
+        name: モーブ - Mauve
+    -
+        code: '#C2A2DA'
+        id:   Lilac
+        name: ライラック - Lilac
+    -
+        code: '#C7A1D7'
+        id:   Orchid
+        name: オーキッド - Orchid
+    -
+        code: '#A260BF'
+        id:   Purple
+        name: パープル - Purple
+    -
+        code: '#C949A2'
+        id:   Magenta
+        name: マゼンタ - Magenta
+    -
+        code: '#CF61A5'
+        id:   CherryPink
+        name: チェリーピンク - Cherry Pink
+    -
+        code: '#F1F1F1'
+        id:   White
+        name: ホワイト - White
+    -
+        code: '#F1F1F1'
+        id:   SnowWhite
+        name: スノーホワイト - Snow White
+    -
+        code: '#E3D4CA'
+        id:   Ivory
+        name: アイボリー - Ivory
+    -
+        code: '#BABAC6'
+        id:   SkyGray
+        name: スカイグレイ - Sky Gray
+    -
+        code: '#ADADAD'
+        id:   PearlGray
+        name: パールグレイ - Pearl Gray
+    -
+        code: '#A0A0A0'
+        id:   SilverGray
+        name: シルバーグレイ - Silver Gray
+    -
+        code: '#939393'
+        id:   AshGray
+        name: アッシュグレイ - Ash Gray
+    -
+        code: '#93848B'
+        id:   RoseGray
+        name: ローズグレイ - Rose Gray
+    -
+        code: '#797979'
+        id:   Gray
+        name: グレイ - Gray
+    -
+        code: '#736C79'
+        id:   SteelGray
+        name: スチールグレイ - Steel Gray
+    -
+        code: '#56555E'
+        id:   SlateGray
+        name: スレートグレイ - Slate Gray
+    -
+        code: '#4E4854'
+        id:   CharcoalGray
+        name: チャコールグレイ - Charcoal Gray
+    -
+        code: '#1C1C1C'
+        id:   LampBlack
+        name: ランプブラック - Lamp Black
+    -
+        code: '#1C1C1C'
+        id:   Black
+        name: ブラック - Black
