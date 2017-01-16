@@ -1,3 +1,3 @@
 # ColorizeJIS
 
-![ColorizeJIS](resources/logo.jpg)
+![ColorizeJIS](resources/images/logo.jpg)
