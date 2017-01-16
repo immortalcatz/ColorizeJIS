@@ -34,6 +34,11 @@
 - No Recipe, **CREATIVE MODE ONLY!** (クリエイティブモード専用)
 
 
+## Download
+
+<https://github.com/Isthmis/ColorizeJIS/raw/master/resources/package/ColorizeJIS%20-%201.0.jar>
+
+
 ## Usage
 
 ### Install
