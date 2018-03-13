@@ -36,7 +36,7 @@
 
 ## Download
 
-<https://github.com/Isthmis/ColorizeJIS/raw/master/resources/package/ColorizeJIS%20-%201.0.jar>
+[ColorizeJIS - Minecraft CurseForge](https://minecraft.curseforge.com/projects/colorizejis)
 
 
 ## Usage
