@@ -1,23 +1,23 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.6
 
 '''
     Minecraft Colorize Blocks Generator
 '''
 
-import sys
-import os
-import shutil
-import re
-import yaml
 import imghdr
 import json
+import os
+import re
+import shutil
+import sys
+import yaml
 
 
 
 config_file = 'config.yaml'
 
-exclude_dir  = re.compile(r'{0}(\..+|[e|E]xcludes?){0}'.format(os.path.sep))    # .hidden_dir/ or excludes/
-exclude_file = re.compile(r'\.exclude(\.|$)')    # *.exclude.* or *.exclude File
+ignore_dir  = re.compile(fr'{os.path.sep}(\..+|[e|E]xcludes?){os.path.sep}')    # .hidden_dir/ or ignores/
+ignore_file = re.compile(r'\.ignore(\.|$)')    # *.ignore.* or *.ignore File
 
 def add_directory_lastsep(directory):
     if directory:
@@ -29,8 +29,8 @@ def list_all_files(directory, show_root_dir=True, show_hidden_files=False):
     for root, dirs, files in os.walk(directory):
         root = add_directory_lastsep(root)
         for file in files:
-            if (re.search(exclude_dir, root) is not None) or (re.search(exclude_file, file) is not None) or (show_hidden_files is False and file.startswith('.')):
-                print('exclude: ' + os.path.join(root, file))
+            if (re.search(ignore_dir, root) is not None) or (re.search(ignore_file, file) is not None) or (show_hidden_files is False and file.startswith('.')):
+                print('ignore: ' + os.path.join(root, file))
                 continue
             elif show_root_dir is False:
                 root = re.sub('^' + directory, '', root)
@@ -72,17 +72,17 @@ if 1 < len(sys.argv):
         if config['mod']['packageName']:
             print('')
             print('Preparing .jar file…')
-            package_file = '{0}{1}.jar'.format(add_directory_lastsep(config['mod']['packageDir']), config['mod']['packageName'])
+            package_file = f"{add_directory_lastsep(config['mod']['packageDir'])}{config['mod']['packageName']}.jar"
             if config['mod']['packageDir'] and not os.path.isdir(config['mod']['packageDir']):
                 os.makedirs(config['mod']['packageDir'])
             shutil.copyfile('build/libs/modid-1.0.jar', package_file)
             print('')
             print('PACKAGING SUCCESSFUL')
             print('')
-            print('Mod package file: {0}'.format(package_file))
+            print(f'Mod package file: {package_file}')
             print('')
     else:
-        print('Usage: {0} [-p/--packaging]'.format(sys.argv[0]))
+        print(f'Usage: {sys.argv[0]} [-p/--packaging]')
     sys.exit()
 
 
@@ -143,11 +143,11 @@ for template in templates:
 '''
     Generate Textures
 '''
-texture_dir = '{0}main/resources/assets/{1}/textures/blocks/'.format(export_dir, config['mod']['id'])
+texture_dir = f"{export_dir}main/resources/assets/{config['mod']['id']}/textures/blocks/"
 if not os.path.isdir(texture_dir):
     os.makedirs(texture_dir)
 for color in colors:
-    os.system('convert -size 16x16 xc:{1} "{0}{2}.png"'.format(texture_dir, color['code'], color['id']))
+    os.system(f'''convert -size 16x16 xc:{color['code']} "{texture_dir}{color['id']}.png"''')
 
 
 

@@ -66,9 +66,13 @@ Forgeの仕様(?)のようなので、おそらくMod側では対策不能です
 ## Development
 
 ### Require
-- Bash, Python3, ImageMagick ([Minecraft Colorize Blocks Generator](https://github.com/Isthmis/Minecraft-Colorize-Blocks-Generator))
-- Gradle
+- [Minecraft Colorize Blocks Generator](https://github.com/Isthmis/Minecraft-Colorize-Blocks-Generator)
+    - Bash
+    - Python 3.6.0
+    - PyYAML
+    - ImageMagick
 - Forge
+- Gradle
 
 
 ## License
